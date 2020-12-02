@@ -1,0 +1,46 @@
+html {
+font-size: 20px;
+}
+body {
+box-sizing: border-box;
+}
+* {
+margin: 0;
+padding: 0;
+}
+h3 {
+    margin-top: 1.5rem;
+    font-size: 30px;
+    color: lightblue;
+    text-align: center;
+}
+.container {
+    
+    display: flex;    
+    flex-direction: column;
+    width: 1100px;
+    height: 1060px;
+    background-color: rgb(80, 54, 197);
+}
+.memory-game {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 4rem;
+}
+.cards {
+    background: rgb(20, 199, 223);
+    border: 1px solid #bbb;
+    border-radius: .1rem;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: .25rem .125rem;
+    padding: 100px;
+
+}
+button {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;}
