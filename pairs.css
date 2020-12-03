@@ -27,6 +27,7 @@ h3 {
     display: flex;
     flex-direction: row;
     width: 4rem;
+    perspective: 1000px;
 }
 .cards {
     background: rgb(20, 199, 223);
@@ -36,11 +37,42 @@ h3 {
     font-size: 1rem;
     line-height: 1.5rem;
     margin: .25rem .125rem;
-    padding: 100px;
+    padding: 50px;
+    position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+ transition: transform .5s;
 
 }
+.cards:active {
+
+    transform: scale(0.97);
+ 
+    transition: transform .2s;
+ 
+  }
 button {
     width: 80px;
     height: 50px;
     text-align: center;
     justify-content: center;}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+.cards.flip {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+.back {
+
+ backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(180deg);
+  }
