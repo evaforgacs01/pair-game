@@ -9,10 +9,21 @@
 <body>
 <div class="container">
     <h3>Pairs</h3>
-    <div class="memory-game">
+
+    <h2>Stopper</h2>
+    <div class="clock">
+        <div class="stopper-face">
+
+        </div>
+    </div>
+    <button class="start-stop-btn">
+        Start/Stop
+    </button>
+
+    <div class="memory-game" data-framework="react">
         <div class="cards"> 
-            <img class="front" src="/img\animals.png" alt="">
-            <img class="back" src="/img\fox.png.png" alt="">
+            <img class="front" src="/img\animals.png" alt="react">
+            <img class="back" src="/img\fox.png.png" alt="Memory Card">
         </div>
         <div class="cards">
             <img class="front" src="/img\animals.png" alt="">
@@ -32,8 +43,8 @@
         </div>
     </div>
     <div class="memory-game">
-        <div class="cards">
-            <img class="front" src="/img\animals.png" alt="">
+        <div class="cards" data-framework="react">
+            <img class="front" src="/img\animals.png" alt="react">
             <img class="back" src="/img\fox.png.png" alt="">
         </div>
         <div class="cards">
@@ -53,8 +64,7 @@
             <img class="back" src="/img\fox.png.png" alt="">
         </div>
     </div>
-    <button class="new-game">
-        New Game</button>
+    
 </div>
 
 
