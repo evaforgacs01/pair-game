@@ -2,24 +2,26 @@ html {
 font-size: 20px;
 }
 body {
+    
 box-sizing: border-box;
 }
 * {
 margin: 0;
 padding: 0;
 }
-h3 {
+h3, p {
     margin-top: 1.5rem;
     font-size: 30px;
     color: lightblue;
     text-align: center;
+    justify-content: center
 }
 .container {
-    
     display: flex;    
     flex-direction: column;
     width: 1100px;
     height: 1060px;
+    
     background-color: rgb(80, 54, 197);
 }
 .memory-game {
@@ -29,8 +31,9 @@ h3 {
     width: 4rem;
     perspective: 1000px;
 }
-.cards {
-    background: rgb(20, 199, 223);
+.memory-cards {
+    background-color: transparent;
+    /* background: rgb(20, 199, 223); */
     border: 1px solid #bbb;
     border-radius: .1rem;
     display: block;
@@ -45,7 +48,7 @@ h3 {
     transition: transform .5s;
 
 }
-.cards:active {
+.memory-cards:active {
 
     transform: scale(0.97);
     transition: transform .1s;
@@ -58,17 +61,25 @@ button {
     justify-content: center;}
 
 img {
+    
     width: 50px;
     height: 50px;
 }
-.cards, .flip {
+.memory-cards.flip {
     transform: rotateY(180deg);
   }
 
   .front, .back {
+    
+    
  backface-visibility: hidden;
 }
 
 .front {
+    display: flex;
     transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    
   }
