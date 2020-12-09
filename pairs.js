@@ -1,7 +1,10 @@
 
 'use strict';
 
+
   let points = 0;
+
+  
 
 
 const cards = document.querySelectorAll('.memory-cards');
@@ -63,6 +66,8 @@ const cards = document.querySelectorAll('.memory-cards');
      card.style.order = ramdomPos;
 
    });
+
+   
 
  })();
 
